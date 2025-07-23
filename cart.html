@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - e-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="header">
+        <div class="img-ach">
+            <img src="images/achieversIT.png" alt="no image">
+        </div>
+        <div class="space"></div>
+        <div class="nav-pages">
+            <div class="home"><a href="./index.html">Home</a></div>
+            <div class="shop"><a href="shop.html">Shop</a></div>
+            <div class="cart"><a href="cart.html">cart</a></div>
+            <div class="cart position-relative">
+                <a href="cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="cart-badge position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size:0.6rem; min-width:16px; height:16px; display:flex; align-items:center; justify-content:center; border-radius:50%; padding:0; border:1.5px solid #fff;">4</span>
+                </a>
+            </div>
+            <div class="login"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </div>
+    <!-- Page content goes here -->
+    <div class="container-fluid my-5 cart-section">
+      <div class="row cart-row gx-5" style="padding-left:50px; padding-right:50px;"> <!-- 50px gap on both sides -->
+        <div class="col-12 col-md-3 offset-md-9 d-flex flex-column align-items-end" style="padding-right:0;"> <!-- offset-md-9 for extreme right, top row -->
+          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:18px; min-height:70px; width:100%;"> <!-- Cart summary at top right -->
+            <div class="col-12 d-flex flex-column justify-content-between">
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-name">Cart Summary</span>
+                </div>
+              </div>
+              <hr style="margin:8px 0;">
+              <div class="row">
+                <div class="col-12">
+                  <span class="fw-bold">Total Price :</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-price-black">$1246</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row cart-row gx-5" style="padding-left:50px; padding-right:50px;"> 
+        <div class="col-12 col-md-6 cart-col align-self-start" style="margin-top:-120px;"> 
+          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:24px;">
+            <div class="col-3 cart-img-col">
+              <img src="images/watch-03.jpg" alt="Watch" class="cart-img">
+            </div>
+            <div class="col-6 cart-info-col">
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-name">Watch 3</span>
+                </div>
+              </div>
+              <div class="row cart-empty-row"></div>
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-price-grey">$199 x 1</span>
+                  <span class="cart-price-black">$199</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 cart-action-col">
+              <div>
+                <i class="fa-solid fa-xmark cart-x"></i>
+              </div>
+              <div class="cart-qty-controls">
+                <i class="fa-solid fa-minus cart-minus"></i>
+                <i class="fa-solid fa-plus cart-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:24px;">
+            <div class="col-3 cart-img-col">
+              <img src="images/phone-08.png" alt="Phone" class="cart-img">
+            </div>
+            <div class="col-6 cart-info-col">
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-name">Phone 8</span>
+                </div>
+              </div>
+              <div class="row cart-empty-row"></div>
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-price-grey">$299 x 1</span>
+                  <span class="cart-price-black">$299</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 cart-action-col">
+              <div>
+                <i class="fa-solid fa-xmark cart-x"></i>
+              </div>
+              <div class="cart-qty-controls">
+                <i class="fa-solid fa-minus cart-minus"></i>
+                <i class="fa-solid fa-plus cart-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 cart-card" style="margin-bottom:10px; padding:24px;">
+            <div class="col-3 cart-img-col">
+              <img src="images/arm-chair-02.jpg" alt="Arm Chair" class="cart-img">
+            </div>
+            <div class="col-6 cart-info-col">
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-name">Arm Chair 2</span>
+                </div>
+              </div>
+              <div class="row cart-empty-row"></div>
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-price-grey">$399 x 1</span>
+                  <span class="cart-price-black">$399</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 cart-action-col">
+              <div>
+                <i class="fa-solid fa-xmark cart-x"></i>
+              </div>
+              <div class="cart-qty-controls">
+                <i class="fa-solid fa-minus cart-minus"></i>
+                <i class="fa-solid fa-plus cart-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="row g-0 cart-card" style="padding:24px;">
+            <div class="col-3 cart-img-col">
+              <img src="images/single-sofa-04.png" alt="Sofa 4" class="cart-img">
+            </div>
+            <div class="col-6 cart-info-col">
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-name">Sofa 4</span>
+                </div>
+              </div>
+              <div class="row cart-empty-row"></div>
+              <div class="row">
+                <div class="col-12">
+                  <span class="cart-price-grey">$349 x 1</span>
+                  <span class="cart-price-black">$349</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 cart-action-col">
+              <div>
+                <i class="fa-solid fa-xmark cart-x"></i>
+              </div>
+              <div class="cart-qty-controls">
+                <i class="fa-solid fa-minus cart-minus"></i>
+                <i class="fa-solid fa-plus cart-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex flex-column align-items-start" style="padding-left:0;">
+        </div>
+      </div>
+    </div>
+    <footer style="background: #0a2240; color: #fff; padding: 48px 0 24px 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <div class="d-flex align-items-center mb-3">
+              <span class="fw-bold" style="font-size: 1.2rem; color: #fff; letter-spacing: 1px;">Mart</span>
+              <i class="fa-solid fa-bag-shopping ms-2" style="font-size: 1.2rem; color: #fff;"></i>
+            </div>
+            <div style="color: #fff; opacity: 0.85; font-size: 1rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur.</div>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">About Us</h5>
+            <ul class="list-unstyled" style="color: #fff;">
+              <li>Careers</li>
+              <li>Our Stores</li>
+              <li>Our Cares</li>
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">Customer Care</h5>
+            <ul class="list-unstyled" style="color: #fff;">
+              <li>Help Center</li>
+              <li>How to Buy</li>
+              <li>Track Your Order</li>
+              <li>Corporate and Bulk Purchasing</li>
+              <li>Returns and Refunds</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h5 class="fw-bold mb-3" style="color: #fff; font-size: 1rem;">Address</h5>
+            <address style="color: #fff; opacity: 0.85; font-size: 1rem;">
+            123 Main Street, Suite 100<br>
+            Bangalore, Karnataka 560001<br>
+            Email: support@mart.com<br>
+            Phone: +91 98765 43210
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
